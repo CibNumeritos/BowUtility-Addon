@@ -1,0 +1,46 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "Java bow ding sound",
+		"description": "This addon adds the bow \"ding\" sound that plays in Minecraft: Java edition when you hit a player using a bow, but this addon plays that sound with other projectiles like snowballs, tridents, etc... ",
+		"min_engine_version": [
+			1,
+			19,
+			50
+		],
+		"uuid": "53e77f17-e6de-4a9b-af5a-263ec359acb4",
+		"version": [
+			1,
+			0,
+			0
+		]
+	},
+	"modules": [
+		{
+			"type": "data",
+			"uuid": "42e3b8ee-ae01-4895-9a7a-b395752d365c",
+			"version": [
+				1,
+				0,
+				0
+			]
+		},
+		{
+			"type": "script",
+			"language": "javascript",
+			"uuid": "86068413-40ad-4456-a3e0-7368c5929613",
+			"entry": "scripts/index.js",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	],
+	"dependencies": [
+		{
+			"module_name": "@minecraft/server",
+			"version": "1.1.0-beta"
+		}
+	]
+}
