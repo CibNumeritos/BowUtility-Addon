@@ -7,9 +7,11 @@ const BlackListedProjectiles = [
     "minecraft:egg",
     "minecraft:fishing_hook"
 ]; 
-world.events.projectileHit.subscribe((arg) => {
-    if (arg.entityHit?.entity.typeId != "minecraft:player" || arg.source.typeId != "minecraft:player" || arg.entityHit?.entity.name == arg.source.name || BlackListedProjectiles.includes(arg.projectile.typeId)) {
+world.events.entityHurt.subscribe((arg) => {
+    if (!arg.projectile || arg.hurtEntity?.typeId != "minecraft:player" || arg.damagingEntity?.typeId != "minecraft:player" || arg.hurtEntity?.name == arg.damagingEntity?.name || BlackListedProjectiles.includes(arg.projectile?.typeId)) {
         return;
     };
-    arg.source.playSound("random.orb", { volume: 0.5, pitch: 0.5 });
+    arg.damagingEntity.playSound("random.orb", { volume: 0.5, pitch: 0.5 });
+    const health = arg.hurtEntity.getComponent('health');
+    arg.damagingEntity.tell(`§e${arg.hurtEntity.name} is now at ${health.current < 0 ? 0 : health.current.toFixed(1)}/${Math.floor(health.value)} §lHP`)
 });
