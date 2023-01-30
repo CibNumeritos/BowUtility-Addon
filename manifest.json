@@ -42,5 +42,22 @@
 			"module_name": "@minecraft/server",
 			"version": "1.1.0-beta"
 		}
+	],
+	"subpacks": [
+		{
+			"name": "§aOnly java sound",
+			"folder_name": "only_sound",
+			"memory_tier": 0
+		},
+		{
+			"name": "§aJava sound + health indicator (in chat)",
+			"folder_name": "indicator_chat",
+			"memory_tier": 0
+		},
+		{
+			"name": "§aJava sound + health indicator (in actionbar)",
+			"folder_name": "indicator_actionbar",
+			"memory_tier": 0
+		}
 	]
 }
