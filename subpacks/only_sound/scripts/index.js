@@ -8,8 +8,8 @@ const BlackListedProjectiles = [
     "minecraft:fishing_hook"
 ]; 
 world.events.entityHurt.subscribe((arg) => {
-    if (!arg.projectile || arg.hurtEntity?.typeId != "minecraft:player" || arg.damagingEntity?.typeId != "minecraft:player" || arg.hurtEntity?.name != arg.damagingEntity?.name || BlackListedProjectiles.includes(arg.projectile?.typeId)) {
+    if (!arg.damageSource.damagingProjectile || arg.hurtEntity?.typeId != "minecraft:player" || arg.damageSource.damagingEntity?.typeId != "minecraft:player" || arg.hurtEntity?.name != arg.damageSource.damagingEntity?.name || BlackListedProjectiles.includes(arg.damageSource.damagingProjectile?.typeId)) {
         return;
     };
-    arg.damagingEntity.playSound("random.orb", { volume: 0.5, pitch: 0.5 });
+    arg.damageSource.damagingEntity.playSound("random.orb", { volume: 0.5, pitch: 0.5 });
 });
