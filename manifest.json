@@ -2,11 +2,11 @@
 	"format_version": 2,
 	"header": {
 		"name": "§aBow utiliy add-on",
-		"description": "§aThis addon adds the bow \"ding\" sound that plays in Minecraft: Java edition when you hit a player using a bow, but this addon plays that sound with tridents...",
+		"description": "§aThis addon adds the bow \"ding\" sound that plays in Minecraft: Java edition when you hit a player using a bow, and let you choose between a health indicator!",
 		"min_engine_version": [
 			1,
 			19,
-			50
+			60
 		],
 		"uuid": "53e77f17-e6de-4a9b-af5a-263ec359acb4",
 		"version": [
