@@ -7,5 +7,5 @@
 <p>
 <h2 align="center"> Juegos experimentales </h2>
 <p align="center"> Este add-on solo requiere la API beta para funcionar correctamente y no utiliza el archivo player.json. </p>
-<p align="center"> <img align="center" src="./experimentos.jpg" alt="exp" width=400> </p>
+<p align="center"> <img align="center" src="./exp.jpg" alt="exp" width=400> </p>
 <p>
