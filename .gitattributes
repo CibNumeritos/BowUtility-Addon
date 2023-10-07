@@ -1,0 +1,5 @@
+
+scripts/**/*.json linguist-vendored=true
+*.json linguist-detectable=true
+
+*.js text diff=javascript
