@@ -1,4 +1,4 @@
-import { MinecraftEffectTypes, world } from "@minecraft/server";
+import { world } from "@minecraft/server";
 const AllowedProjectiles = ["minecraft:arrow", "minecraft:thrown_trident"];
 world.afterEvents.projectileHitEntity.subscribe((arg) => {
   const hitEntity = arg.getEntityHit()?.entity;
